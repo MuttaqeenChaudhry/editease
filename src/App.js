@@ -37,7 +37,7 @@ function App() {
   return (
     <>
     <BrowserRouter>
-    <Navbar title="TextUtiz" mode={mode} toggleMode={toggleMode}/>
+    <Navbar title="EditEase" mode={mode} toggleMode={toggleMode}/>
     <Alert alert={alert}/>
    
     <div className="container">
@@ -45,7 +45,7 @@ function App() {
   
         <Route exact path="/About" element={<About mode={mode}/>}> 
         </Route>
-        <Route exact path="/Textform" element={<Textform heading="Enter Text to Analyze" mode={mode} showAlert={showAlert}/>}>
+       <Route exact path="/Textform" element={<Textform heading="Enter Text to Analyze" mode={mode} showAlert={showAlert}/>}>
         </Route>
       
         </Routes>

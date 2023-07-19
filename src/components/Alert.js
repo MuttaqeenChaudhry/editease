@@ -6,11 +6,12 @@ function Alert(props) {
         return stringrcv.charAt(0).toUpperCase() + stringrcv.slice(1);
     }
     return (
-        props.alert &&
-        <div className="container">
+        <div style={{height: '60px'}}>
+        {props.alert &&
         <div className={`alert alert-${props.alert.typ} alert-dismissible fade show`} role="alert">
             <strong>{capitalize(props.alert.typ)}</strong>: {props.alert.msg}
         </div>
+        }
         </div>
     )
 }
