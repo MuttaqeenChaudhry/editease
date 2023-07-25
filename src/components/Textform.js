@@ -25,10 +25,10 @@ export default function Textform(props) {
   }
 
   const Copytext = ()=>{
-    var text = document.getElementById("myBox");
-    text.select();
-    navigator.clipboard.writeText(text.value);
-    document.getSelection().removeAllRanges();
+    //var text = document.getElementById("myBox");
+    //text.select();
+    navigator.clipboard.writeText(text);
+    //document.getSelection().removeAllRanges();
     props.showAlert("success","Copied to Clipboard!");
   
   }
@@ -67,8 +67,8 @@ export default function Textform(props) {
 
 <div className="container my-2">
 <h2 className={`text-${ props.mode === 'light' ? 'dark':'light'}`}>Your Text Summary</h2>
-<p style={{color: props.mode === 'dark' ? 'white' : 'black'}}>{text.split(" ").filter((element)=>{return element.length!=0}).length} Words & {text.length} Characters</p>
-<p style={{color: props.mode === 'dark' ? 'white' : 'black'}}>{0.008 * text.split(" ").filter((element)=>{return element.length!=0}).length} Avg Minutes To Read</p>
+<p style={{color: props.mode === 'dark' ? 'white' : 'black'}}>{text.split(/\s+/).filter((element)=>{return element.length!==0}).length} Words & {text.length} Characters</p>
+<p style={{color: props.mode === 'dark' ? 'white' : 'black'}}>{0.008 * text.split(" ").filter((element)=>{return element.length!==0}).length} Avg Minutes To Read</p>
 <h2 className={`text-${ props.mode === 'light' ? 'dark':'light'}`}>Preview</h2>
 <p style={{color: props.mode === 'dark' ? 'white' : 'black'}}>{text.length > 0 ? text : "Enter Something! to preview it here"}</p>
 </div>
