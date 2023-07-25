@@ -74,7 +74,7 @@ function App() {
   }
   return (
     <>
-    <BrowserRouter basename="/Textform">
+    <BrowserRouter>
     <Navbar title="EditEase" mode={mode} toggleMode={toggleMode}/>
     <Alert alert={alert}/>
     
