@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/editease/static/css/main.3d6e961e.css",
-    "main.js": "/editease/static/js/main.b3a7a224.js",
+    "main.js": "/editease/static/js/main.fafe2940.js",
     "static/js/787.2746eaee.chunk.js": "/editease/static/js/787.2746eaee.chunk.js",
     "index.html": "/editease/index.html",
     "main.3d6e961e.css.map": "/editease/static/css/main.3d6e961e.css.map",
-    "main.b3a7a224.js.map": "/editease/static/js/main.b3a7a224.js.map",
+    "main.fafe2940.js.map": "/editease/static/js/main.fafe2940.js.map",
     "787.2746eaee.chunk.js.map": "/editease/static/js/787.2746eaee.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3d6e961e.css",
-    "static/js/main.b3a7a224.js"
+    "static/js/main.fafe2940.js"
   ]
 }
