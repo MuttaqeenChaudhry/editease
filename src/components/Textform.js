@@ -57,12 +57,12 @@ export default function Textform(props) {
 <div className="mb-3">
 <textarea className="form-control" style={{backgroundColor: props.mode === 'dark' ? 'grey' : 'white', color : props.mode === 'dark' ? 'white' : 'black'}} id="myBox" rows="10" value={text} onChange={handleOnChange} ></textarea>
 </div>
-<button disabled={text.length===0}className="btn btn-danger mx-1 my-1" onClick={handleUPClick}>Convert To Upercase</button>
+<button disabled={text.length===0}className="btn btn-success mx-1 my-1" onClick={handleUPClick}>Convert To Upercase</button>
 <button disabled={text.length===0}className="btn btn-success mx-1 my-1" onClick={handleLoClick}>Convert To Lowercase</button>
-<button disabled={text.length===0}className="btn btn-primary mx-1 my-1" onClick={handlespeech}>Speak</button>
-<button disabled={text.length===0}className="btn btn-danger mx-1 my-1" onClick={Copytext}>Copy to Clipboard</button>
+<button disabled={text.length===0}className="btn btn-success mx-1 my-1" onClick={handlespeech}>Speak</button>
+<button disabled={text.length===0}className="btn btn-success mx-1 my-1" onClick={Copytext}>Copy to Clipboard</button>
 <button disabled={text.length===0}className="btn btn-success mx-1 my-1" onClick={Remspaces}>Remove Extra Spaces</button>
-<button disabled={text.length===0}className="btn btn-primary mx-1 my-1" onClick={removetext}>Clear Text</button>
+<button disabled={text.length===0}className="btn btn-danger mx-1 my-1" onClick={removetext}>Clear Text</button>
 </div>
 
 <div className="container my-2">
